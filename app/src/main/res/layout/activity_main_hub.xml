@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/urldd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainHub">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="324dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/qwqw"
+        android:text="Добро пожаловать в EuroVote!"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+
+    <Button
+        android:id="@+id/sf1"
+        android:layout_width="205dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/qwqw"
+        android:onClick="FirstSemi_Click"
+        android:text="1 пф"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sf2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/sf2"
+        android:layout_width="205dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/qwqw"
+        android:onClick="SecondSemi_Click"
+        android:text="2 пф"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/finald"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sf1" />
+
+    <Button
+        android:id="@+id/finald"
+        android:layout_width="205dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="51dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/qwqw"
+        android:onClick="Final_Click"
+        android:text="Автофиналисты"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sf2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="402dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/esclogo"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/qwqw"
+        android:text="Посмотри участников и проголосуй за любимчика^^"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sf1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="205dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Голосование"
+        android:textSize="20dp"
+        android:fontFamily="@font/qwqw"
+        android:onClick="Vote_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finald" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
